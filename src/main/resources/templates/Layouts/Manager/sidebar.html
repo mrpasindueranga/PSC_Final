@@ -1,0 +1,52 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center"  th:href="@{/manager/dashboard}">
+        <div class="sidebar-brand-icon rotate-n-15">
+        </div>
+        <div class="sidebar-brand-text mx-3">Paddy MS</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" th:href="@{/manager/dashboard}">
+            <i class="fas fa-angle-right"></i>
+            <span>Manager Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+
+    <!-- Nav Item - Employees -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/manager/employees}">
+            <i class="fas fa-address-card"></i>
+            <span>Employees</span></a>
+    </li>
+
+    <!-- Nav Item - Employees -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/manager/buyPaddy}">
+            <i class="fas fa-address-card"></i>
+            <span>Paddy Buy List</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/manager/issuePaddy}">
+            <i class="fas fa-address-card"></i>
+            <span>Paddy Sell List</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/manager/farmers}">
+            <i class="fas fa-address-card"></i>
+            <span>Farmers</span></a>
+    </li>
+</ul>
+
+<!-- End of Sidebar -->

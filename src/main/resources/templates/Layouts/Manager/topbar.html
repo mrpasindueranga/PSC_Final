@@ -1,0 +1,21 @@
+<!-- TobBar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" sec:authorize="isAuthenticated()" xmlns:sec="https://www.thymeLeaf.orh/thymeLeaf-extras-springsecurity5">
+    <!-- TobBar Navbar -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="d-none d-lg-inline text-black-50" sec:authentication="name">Username</span>
+            </a>
+        </li>
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+    </ul>
+
+    <div>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout" class="btn btn-primary pt-1 pb-1">
+        </form>
+    </div>
+</nav>

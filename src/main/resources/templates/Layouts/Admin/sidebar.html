@@ -1,0 +1,70 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" th:href="@{/admin}">
+        <div class="sidebar-brand-icon rotate-n-15">
+        </div>
+        <div class="sidebar-brand-text mx-3">PMS Admin</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" th:href="@{/admin}">
+            <i class="fas fa-angle-right"></i>
+            <span>Admin Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    
+
+    <!-- Nav Item - Employees -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/employees}">
+            <i class="fas fa-address-card"></i>
+            <span>Employees</span></a> 
+    </li>
+
+    <!-- Nav Item - Farmers -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/farmers}">
+            <i class="fas fa-user-circle"></i>
+            <span>Farmers</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/branches}">
+            <i class="fas fa-building"></i>
+            <span>Branches</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/vehicles}">
+            <i class="fas fa-truck-moving"></i>
+            <span>Vehicles</span></a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/issuePaddy}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Issue Paddy</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/buyPaddy}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Buy Paddy List</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/admin/prices}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Paddy Prices</span></a>
+    </li>
+</ul>
+<!-- End of Sidebar -->
