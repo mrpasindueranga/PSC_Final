@@ -108,6 +108,7 @@ public class CollectionOfficerDashboardController {
                     branch.setUsedCapacity(newUsedCapacity);
 
                     branchController.saveBranch(branch);
+                    buyPaddy.setStatus(false);
                     buyPaddyService.save(buyPaddy);
                     message.addFlashAttribute("success", "Success : The Purchase has been added to the system");
                     return "redirect:/collectionOfficer/buyPaddy";

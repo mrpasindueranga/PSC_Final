@@ -22,6 +22,9 @@ public class BuyPaddy {
     @Column(name = "purchase_price")
     private float cost;
 
+    @Column(name = "status")
+    private boolean status;
+
     @ManyToOne(cascade = CascadeType.DETACH)
     private Branches branch;
 
@@ -71,5 +74,17 @@ public class BuyPaddy {
 
     public void setBranch(Branches branch) {
         this.branch = branch;
+    }
+
+    public boolean isStatus() {
+        return this.status;
+    }
+
+    public boolean getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }
