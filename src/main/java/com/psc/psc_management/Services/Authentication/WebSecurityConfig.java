@@ -15,7 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
-    public UserDetailsService UserDetailsService(){
+    public UserDetailsService UserDetailsService() {
         return new UserDetailsServiceImpl();
     }
 
@@ -25,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public DaoAuthenticationProvider authenticationProvider(){
+    public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
         authProvider.setPasswordEncoder(passwordEncoder());
         authProvider.setUserDetailsService(UserDetailsService());
@@ -45,11 +45,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/manager/**").hasAuthority("Manager")
                 .antMatchers("/clerk/**").hasAuthority("Clerk")
                 .antMatchers("/collection-officer/**").hasAuthority("Collection Officer")
+                .antMatchers("/finance/**").hasAuthority("Finance Officer")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().permitAll()
                 .and()
-                .logout().permitAll()
-                ;
+                .logout().permitAll();
     }
 }
